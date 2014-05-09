@@ -1,0 +1,490 @@
+.sideBox{
+  display:block;
+   width:500px; 
+   margin-top: 10px;
+   margin-right: auto;
+   margin-left: auto;
+}
+body{
+    background: url('q02th.jpg');
+}
+#player{
+    display:none;
+    z-index: 100;
+}
+.playerHolder{
+    display:block;
+    position:absolute;
+    width:400px;
+    top:50%;
+    margin-top: -85px;
+    padding:5px 0px 30px 0px;
+    text-align: center;
+    z-index: 100;
+
+}
+.playerHolder h1{
+    color:white;
+    text-align: center;
+}
+.playerHolder input{
+    width:300px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px white;
+    text-align: center;
+    font-size: 20px;
+}
+#player .playerHolder{
+    left:50%;
+    margin-left: -200px;
+}
+.plr1{
+    left:50px;
+}
+.plr2{
+    left:100%;
+    margin-left: -450px;
+}
+#mPlayer2Name{
+    background-color:#F0F0F0;
+}
+#multiplayer{
+    display:none;
+}
+#player{
+    display:none;
+}
+#saveBox, #leaderBoardBtn, #myHistoryBtn{
+    display:block;
+    width:200px;
+    height:60px;
+    position: fixed;
+    background-color: #33CCFF;
+    left:-15px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border: 1px solid white;
+    transition: all ease-in-out 0.4s;
+}
+#saveBox h1, #leaderBoardBtn h1, #myHistoryBtn h1{
+    color:white;
+    
+}
+#saveBox:hover, #leaderBoardBtn:hover, #myHistoryBtn:hover{
+    left:0px;
+    box-shadow: 0px 0px 20px black;  
+    cursor: pointer;  
+}
+.p3{
+    top:200px;
+    
+}
+.p2{
+    top:120px;
+    
+}
+.p1{
+    top:40px;
+   
+}
+.leaderplayers{
+    display: block;
+    font-family: Rockwell;
+    font-size:20px;
+    color: white;
+    text-align: center;
+    padding:10px 5px 5px 5px;
+    border: 2px solid #707070 ;
+    border-radius: 20px;
+    margin-left:15px;
+    margin-right:5px;
+    background-color: green;
+}
+.cls{
+    display:block;
+    height:50px;
+    width: 100%;
+     background-color: #0099FF;
+     color: white;
+    position: absolute;
+    left:0px;
+    top:100%;
+    margin-top:-50px;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px white;
+   
+}
+.l1{
+  
+  left:-255px;
+}
+.l2{
+  
+  left:-255px;
+}
+#leaderBoard, #myHistory{
+    
+    width:240px;
+    height:100%;
+    position: fixed;
+    background-color: #33CCFF;
+    top:0px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border: 1px solid white;
+    transition: all ease-in-out 0.4s;
+    z-index: 50;
+}
+#connect{
+    display:none;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    opacity:0.9;
+    background-color: black;
+    z-index: 60;
+}
+.connecth1{
+    display:none;
+    position: fixed;
+    background-color: blue;
+    color: white;
+    height:100px;
+    width:100%;
+    top:50%;
+    margin-top: -50px;
+    padding-top: 40px;
+    text-align: center;
+    opacity:1;
+z-index: 60;
+}
+#menuBox{
+    display:block;
+    width:600px;
+    height:50px;
+    background-color:#33CCFF;
+    border-radius:5px;
+    box-shadow:0px 0px 10px #33CCFF;
+    margin-right: auto;
+   margin-left: auto;
+}
+#colorTab{
+    display:inline-block;
+    height:100%;
+    width:50px;
+    background: url('http://www.clker.com/cliparts/A/d/o/q/l/f/ink-splash-with-drops-brown-md.png') no-repeat;
+    background-size:30px 30px;
+    background-position:center center;
+    border-top-left-radius:5px;
+     border-bottom-left-radius:5px;
+   border-right:1px solid white;
+    transition:background-color 1s;
+    cursor:pointer;
+    
+    
+}
+#colorTab:hover{
+    background-color:#3399CC;
+}
+#symbolTab{
+    display:inline-block;
+    height:100%;
+    width:50px;
+    margin-left:-2px;
+    border-right:1px solid white;
+    transition:background-color 1s;
+    cursor:pointer;
+    background: url('http://icons.iconarchive.com/icons/icons-land/metro-raster-sport/256/Casino-Playing-Cards-icon.png') no-repeat;
+    background-size:30px 30px;
+    background-position:center center;
+}
+#symbolTab:hover{
+    background-color:#3399CC;
+}
+#symbols{
+    display:inline-block;
+    width:300px;
+    height:100%;
+    
+    
+    
+    
+}
+#symbols a{
+    display:block;
+   float:left;
+    font-size:50px;
+    margin-left:15px;
+    cursor:pointer;
+
+}
+#colors{
+    display:none;
+    width:500px;
+    height:100%;
+       
+    
+}
+.colorStyle{
+    width:40px;
+    height:40px;
+    display:inline-block;
+    margin:0px 2px 2px 2px;
+    border:1px solid white;
+    border-radius:10px;
+    margin-left:15px; 
+    cursor:pointer;
+}
+#c1{
+    background-color:red;
+}
+#c2{
+    background-color:green;
+}
+#c3{
+    background-color:blue;
+}
+#c4{
+    background-color:orange;
+}
+#c5{
+    background-color:yellow;
+}
+.cardHolder{
+    position:relative;
+    display:inline-block;
+    background-color:transparent;
+    width:100px;
+    height:130px;
+    margin:5px;
+    padding:0px;
+     border-radius: 10px;
+     z-index: 50;
+     
+}
+.card{
+    position:absolute;
+    display:block;
+    background-color:white;
+    font-size:40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    width:auto;
+    padding:40% 0px 0px 0px;
+    line-height: 100%;
+    left:1px;
+    top:0px;
+    right:1px;
+    bottom:0px;    
+    text-align:center;
+    border-radius: 10px;
+    border:1px solid black;
+     opacity:0;
+     box-shadow: 0px 0px 10px black;
+    -webkit-transform:rotatey(-180deg);
+    transition: all ease-in-out 0.4s;
+}
+.cardAfter{
+    font-size: 20px;
+    position:absolute;
+    width: 20px;
+    left:5px;
+    top:0px;
+    margin-top: 0px;
+}
+.cardAfter a{
+    display:block;
+    width: 20px;
+    height: 18px;
+    text-align: center;
+    margin-top: 0px;
+}
+.cardAfterB{
+    font-size: 20px;
+    position:absolute;
+    width: 20px;
+    left:100%;
+    margin-left: -28px;
+    top:100%;
+    margin-top: -38px;
+    -webkit-transform:rotate(180deg);
+}
+.cardAfterB a{
+    display:block;
+    width: 20px;
+    height: 18px;
+    text-align: center;
+    margin-top: 0px;
+}
+.cardBack{
+    position:absolute;
+    background:url("cback.jpg") no-repeat;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    bottom:0px;
+    width:100%;
+    height:100%;
+    text-align:center;
+    border-radius: 10px;
+    font-size:100px;
+    opacity:1;
+    box-shadow: 0px 0px 10px black;
+    transition: all ease-in-out 0.4s;
+    cursor:pointer;
+
+}
+.invisible{
+    -webkit-transform:rotatey(180deg);    
+    opacity:0;
+    
+    
+}
+.visible{
+    visibility:visible;    
+}
+.cardVisible{
+    -webkit-transform:rotatey(0deg);
+     opacity:1;
+}
+#mode{
+    display:none;
+}
+#continue{
+    display:none;
+}
+
+.mde{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    opacity: 1;
+    background: url('q02th.jpg') no-repeat;
+    border-bottom: 2px solid white;
+    
+    z-index:500;
+    transition:all ease-in-out 0.8s;
+}
+#modeHolder{
+    display:block;
+    position:absolute;
+    width:450px;
+    height:300px;
+    left:50%;
+    top:50%;
+    margin-left: -225px;
+    margin-top:-100px;
+}
+.modebtn h1{
+    color:white;
+    font-family: Verdana;
+    -webkit-transform:rotatey(0deg);
+    transition:all ease-in-out 0.4s;
+}
+.modebtn:hover h1{
+    -webkit-transform:rotatey(360deg);
+    }
+.modebtn{
+    display: block;
+    text-align: center;
+    width:auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor:pointer;
+    transition:all ease-in-out 0.4s;
+}
+.modebtn:hover{
+    background-color: green;
+
+}
+.rollup{
+
+    top:-100%;
+
+}
+#player1{
+    position:fixed;
+    display:none;
+    background: url("splat.png") no-repeat;
+    background-size: 1004px 670px;
+    background-position: -410px -50px;
+    left:0px;
+    width:400px;
+    height:240px;
+    top:100%;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 15px;
+    margin-top:-200px;
+}
+#player2{
+    position:fixed;
+    display:none;
+    left:100%;
+    width:400px;
+    height:240px;
+    top:100%;
+    padding-right: 25px;
+    text-align: right;
+    padding-top: 100px;
+    
+    margin-top:-200px;
+    margin-left: -400px;
+}
+#player2:before{
+    position:absolute;
+    content: "";
+    background: url("splat.png") no-repeat;
+    -webkit-transform:scaleX(-1);
+    transform:scaleX(-1);
+    background-size: 1004px 670px;
+    background-position: -410px -50px;
+    left:0px;
+    width:400px;
+    height:240px;
+    top:0px;
+    z-index: -1;
+}
+#player1 h1, #player2 h1{
+    color:#999;
+    font-size: 15px;
+    font-family: Verdana;
+}
+
+#loadimg{
+    display:block;
+    background: url("loading.gif") no-repeat;
+    position: absolute;
+    width: 150px;
+    height:150px;
+    left:50%;
+    top:50%;
+    margin-top: -75px;
+    margin-left: -75px;
+
+}
+#cHolder{
+    display:block;
+    position:absolute;
+    width:450px;
+    height:200px;
+    left:50%;
+    top:50%;
+    margin-left: -225px;
+    margin-top:-50px;
+}

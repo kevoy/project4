@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+    <script type="text/javascript" src="/_ah/channel/jsapi"></script>
+    <link href="{{ url_for('static', filename='cards.css') }}" rel="stylesheet" type="text/css" >
+      <script src="{{ url_for('static', filename='cards.js') }}"></script>
+  </head>
+  <body>
+    <div id='leaderBoardBtn' class='p1'>
+        <h1>Leader Board</h1>
+    </div>
+     <div id='myHistoryBtn' class='p2'>
+        <h1>My History</h1>
+    </div>
+    <div id='saveBox' class='p3'>
+        <h1>Save Game</h1>
+    </div>
+    <div id='leaderBoard' class='l1'>
+        <h1>Best Players</h1>
+        <h1 class='cls'>Close<h1>
+         {{values.leaderBoard|safe}}
+    </div>
+     <div id='myHistory' class='l2'>
+        <h1>Game History</h1>
+       <h1 class='cls'>Close</h1>
+         {{values.history|safe}}
+    </div>
+     <div id='connect'>
+    </div>
+     <h1 class='connecth1'>Click To Connect</h1>
+    <div id="player1">
+        <h1 id="player1Name">Andrelle</h1>
+        <h1 id="player1NumTurns">Turns: 5</h1>
+        <h1 id="player1NumMatches">Matches: 4</h1>
+    </div>
+     <div id="player2">
+        <h1 id="player2Name">Andrelle</h1>
+        <h1 id="player2NumTurns">Turns: 5</h1>
+        <h1 id="player2NumMatches">Matches: 4</h1>
+    </div>   
+<!--<div id='menuBox'>
+    <div id='colorTab'>
+    </div>
+    <div id='symbolTab'>
+    </div>
+    <div id='colors'>
+        <div class='colorStyle' id='c1'></div>
+        <div class='colorStyle' id='c2'></div>
+        <div class='colorStyle' id='c3'></div>
+        <div class='colorStyle' id='c4'></div>
+        <div class='colorStyle' id='c5'></div>
+    </div>
+    <div id='symbols'>
+        <a class='s1'>✹</a>
+        <a class='s2'>❅</a>
+        <a class='s3'>❊</a>
+        <a class='s4'>❉</a>
+        <a class='s5'>☺</a>
+        
+    </div>
+</div> -->
+<div class="sideBox"></div>
+
+    <div id='player' class='mde rolldown'>
+        <div class='playerHolder'>
+            <h1>Enter Your Name:</h1>
+            <input type='text' id='playerName' />
+        </div>
+    </div>
+    <div id='multiplayer' class='mde rolldown'>
+        <div class='playerHolder plr1'>
+            <h1>Enter Player 1 Name:</h1>
+            <input type='text' id='mPlayer1Name' />
+        </div>
+        <div class='playerHolder plr2'>
+            <h1>Enter Player 2 Name:</h1>
+            <input type='text' id='mPlayer2Name' />
+        </div>
+    </div>
+    <div id='mode' class='mde rolldown'>
+            <div id='modeHolder'>
+                <div id='single' class='modebtn'><h1>Single Player</h1></div>
+                <div id='multi' class='modebtn'><h1>Multi-Player</h1></div>
+               <div id='online' class='modebtn'><h1>Multi-Player(Online)</h1></div>
+            </div>
+    </div>
+    <div id='load' class='mde rolldown'>
+            <div id='loadimg'></div>
+    </div>
+    <div id='continue' class='mde rolldown'>
+        <div id='cHolder'>
+            <div id='continueBtn' class='modebtn'><h1>Continue Game</h1></div>
+        </div>
+    </div>
+    <script>
+    channel = new goog.appengine.Channel('{{ values.token }}');
+    socket = channel.open();
+    socket.onopen = onOpened;
+    socket.onmessage = onMessage;
+    socket.onerror = onError;
+    socket.onclose = onClose;
+    opponent = "{{values.opponent}}";
+    isOnline = true;
+    onlineP1Name = "{{values.p1Name}}";
+    onlineP2Name = "{{values.opponent}}";
+  </script>
+   
+</body>
+</html>
